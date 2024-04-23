@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <script>
+        function calcularMedia(numeros){
+            const soma = numeros.reduce((total, numero) => total + numero,0);
+        const media = soma / numeros.length;
+        return media;
+            }
+        const numeros = [10,20,30,40,50];
+        const media = calcularMedia(numeros);
+        console.log(" A média e: "+ media);
+    </script>
+</body>
+</html>
